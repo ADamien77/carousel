@@ -81,3 +81,50 @@ li {
   object-fit: cover; /* Redimensionne l'image en couvrant la diapositive sans la déformer */
   margin: auto; /* Centre l'image si nécessaire */
 }
+
+/* --- Responsive Design --- */
+
+/* Pour les tablettes (écrans entre 768px et 1024px) */
+@media (max-width: 1024px) {
+  .carousel {
+    height: 20rem; /* Réduit la hauteur du carrousel */
+    margin-top: 5rem;
+  }
+
+  button {
+    width: 40px; /* Réduit la taille des boutons */
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+  .slide {
+    width: 80%; /* Laisse moins de place pour les marges */
+    margin: auto;
+  }
+
+  ul {
+    width: 80%; /* Laisse moins de place pour les marges */
+  }
+
+/* Pour les smartphones (écrans de moins de 768px) */
+@media (max-width: 768px) {
+  .carousel {
+    height: 15rem; /* Réduit davantage la hauteur du carrousel */
+    margin-top: 4rem;
+  }
+
+  button {
+    width: 30px; /* Réduit encore plus la taille des boutons */
+    height: 30px;
+    font-size: 18px;
+  }
+
+  ul {
+    width: 78%; /* Laisse plus de place pour les marges */
+  }
+
+  .slide {
+    width: 78%; /* Laisse plus de place pour les marges */
+  }
+}
