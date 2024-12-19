@@ -96,6 +96,7 @@ li {
     height: 40px;
     font-size: 20px;
     text-align: center;
+    margin: auto;
   }
 }
 
@@ -120,6 +121,7 @@ li {
     height: 30px;
     font-size: 18px;
     text-align: center;
+    margin: auto;
   }
 
   ul {
