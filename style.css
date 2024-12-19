@@ -95,6 +95,7 @@ li {
     width: 40px; /* Réduit la taille des boutons */
     height: 40px;
     font-size: 20px;
+    text-align: center;
   }
 }
 
@@ -118,6 +119,7 @@ li {
     width: 30px; /* Réduit encore plus la taille des boutons */
     height: 30px;
     font-size: 18px;
+    text-align: center;
   }
 
   ul {
