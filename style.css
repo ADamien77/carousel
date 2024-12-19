@@ -1,0 +1,83 @@
+/* Réinitialise la marge et le padding par défaut */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style du conteneur du carrousel */
+.carousel {
+  position: relative; /* Position relative pour placer les éléments enfants de manière absolue */
+  width: 100%; /* La largeur du carrousel occupe toute la page */
+  height: 25rem; /* Hauteur fixe pour le carrousel */
+  overflow: hidden; /* Masque les parties des images qui dépassent */
+  margin-top: 8rem; /* Ajoute un espace au-dessus du carrousel */
+}
+
+/* Style général des boutons */
+button {
+  position: absolute; /* Position absolue pour les placer à l'intérieur du carrousel */
+  top: 50%; /* Place les boutons au centre vertical du carrousel */
+  transform: translateY(-50%); /* Centre les boutons verticalement */
+  width: 50px; /* Largeur des boutons */
+  height: 50px; /* Hauteur des boutons */
+  border: none; /* Supprime les bordures */
+  border-radius: 50%; /* Rend les boutons circulaires */
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+  color: #fff; /* Couleur du texte blanc */
+  font-size: 24px; /* Taille du texte des boutons */
+  cursor: pointer; /* Change le curseur en pointeur sur survol */
+  z-index: 1; /* Assure que les boutons sont au-dessus des diapositives */
+}
+
+/* Positionne le bouton précédent sur le côté gauche */
+#prev {
+  left: 10px;
+}
+
+/* Positionne le bouton suivant sur le côté droit */
+#next {
+  right: 10px;
+}
+
+/* Style pour la liste des diapositives */
+ul {
+  width: 90%; /* Largeur de la liste de diapositives */
+  height: 100%; /* Hauteur égale à celle du carrousel */
+  margin: auto; /* Centre horizontalement la liste */
+  padding: 0; /* Supprime le padding par défaut */
+}
+
+/* Style pour chaque élément de la liste */
+li {
+  list-style: none; /* Supprime les puces */
+  margin: 0; /* Supprime la marge par défaut */
+  padding: 0; /* Supprime le padding par défaut */
+  width: 90%; /* Largeur de chaque diapositive */
+  height: 100%; /* Hauteur de chaque diapositive */
+}
+
+/* Style pour la diapositive active */
+.slide.active {
+  opacity: 1; /* Rendra la diapositive complètement visible */
+  z-index: 2; /* Place la diapositive active au-dessus des autres */
+}
+
+/* Style général pour toutes les diapositives */
+.slide {
+  position: absolute; /* Place les diapositives les unes sur les autres */
+  justify-content: center; /* Centre le contenu horizontalement */
+  width: 90%; /* Largeur de chaque diapositive */
+  height: 100%; /* Hauteur de chaque diapositive */
+  opacity: 0; /* Rend les diapositives invisibles par défaut */
+  transition: opacity 1.5s ease-in-out; /* Transition douce pour l'apparition et la disparition */
+  z-index: 1; /* Place les diapositives derrière la diapositive active */
+}
+
+/* Style des images dans les diapositives */
+.slide img {
+  display: block; /* Supprime les espaces blancs autour des images */
+  width: 100%; /* L'image prend toute la largeur de la diapositive */
+  height: 100%; /* L'image prend toute la hauteur de la diapositive */
+  object-fit: cover; /* Redimensionne l'image en couvrant la diapositive sans la déformer */
+  margin: auto; /* Centre l'image si nécessaire */
+}
