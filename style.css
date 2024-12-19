@@ -99,12 +99,12 @@ li {
 }
 
   .slide {
-    width: 80%; /* Laisse moins de place pour les marges */
+    width: 85%; /* Laisse moins de place pour les marges */
     margin: auto;
   }
 
   ul {
-    width: 80%; /* Laisse moins de place pour les marges */
+    width: 85%; /* Laisse moins de place pour les marges */
   }
 
 /* Pour les smartphones (écrans de moins de 768px) */
