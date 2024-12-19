@@ -121,10 +121,10 @@ li {
   }
 
   ul {
-    width: 78%; /* Laisse plus de place pour les marges */
+    width: 75%; /* Laisse plus de place pour les marges */
   }
 
   .slide {
-    width: 78%; /* Laisse plus de place pour les marges */
+    width: 75%; /* Laisse plus de place pour les marges */
   }
 }
